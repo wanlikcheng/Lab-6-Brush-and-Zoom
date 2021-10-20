@@ -1,45 +1,31 @@
-<!-- Author: Wanli (Kelvin) Cheng
-    Class: Visualization
-    Assignment: Lab 6 -->
-
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<!-- Milligram CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
 
-    <!-- Load CSS files -->
-    
+	<!-- You CSS rules-->
+	<link rel="stylesheet" href="style.css" />
+   
+	<!-- Load Javascript files -->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+	<script src = "https://d3js.org/d3.v6.min.js"></script>
 
-    <!-- Milligram CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+	<!-- <script defer src = "AreaChart.js"></script> -->
+	<script src="main.js" defer type="module"></script>
 
-    <!-- You CSS rules-->
-    <link rel="stylesheet" href="style.css" />
-    
-    <!-- Load Javascript files -->
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script> -->
-    <script src = "https://d3js.org/d3.v6.min.js"></script>
-
-    <!-- Your code -->
-    <script defer src="script.js"></script>
-
-    <!-- container for areachart -->
-    <div class="container">
-        <h1>
-            Unemployed Persons by Industry: 2000-2010
-        </h1>
-        <h2>
-            Data Source: US BLS
-        </h2>
-        
-        <div class="areachart">
-            <!-- You will append a SVG here-->
-        </div>
-    </div>
-
+	<h1>Unemployed persons by industry, 2000-2010</h1>
+	<p>Data Source: <a href = "https://www.bls.gov/">BLS</a></p>
+  </head>
+  <body>
+		<div class = "stacked-chart"></div>
+        <div class = "area-chart"></div>
+		
+  </body>
 </html>
